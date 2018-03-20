@@ -4,7 +4,8 @@
 
 We’d like to see how you approach this challenge, and what process you take, so please aim to push regular commits to the repository as you work through the task.
 
-
+![feed design](./assets/Screen Shot 2018-03-20 at 12.48.52.png)
+![details design](./assets/Screen Shot 2018-03-20 at 12.48.30.png)
 
 For this coding test, we’d like you to build out the above interface as a ReactNative application.
 
