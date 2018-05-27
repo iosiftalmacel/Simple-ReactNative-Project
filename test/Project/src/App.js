@@ -2,11 +2,11 @@ import React from 'react';
 import { Provider } from 'react-redux';
 
 import Store from './Store';
-import BaseNavigation from './Router';
+import GlobalNavigation from './routes/GlobalRouter';
 
 const App = () => (
   <Provider store={Store}>
-    <BaseNavigation />
+    <GlobalNavigation />
   </Provider>
 );
 
