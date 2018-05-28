@@ -8,7 +8,8 @@ let Strings = new  LocalizedStrings({
     bottom_nav_redeemed:"REDEEMED",
     bottom_nav_profile:"PROFILE",
 
-    home_title:"HOME"
+    home_title:"HOME",
+    detail_title:"DETAIL"
   },
 });
 

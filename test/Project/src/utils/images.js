@@ -10,6 +10,9 @@ const Images = {
     redeemed_empty: require('../assets/redeemed_empty.png'),
     redeemed_filled: require('../assets/redeemed_filled.png'),
     settings_icon: require('../assets/settings_icon.png'),
+
+    like_empty: require('../assets/like_empty.png'),
+    like_filled: require('../assets/like_filled.png'),
 }
 
 export default Images;

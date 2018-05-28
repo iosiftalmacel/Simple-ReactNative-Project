@@ -1,8 +1,12 @@
 import { createStore, applyMiddleware } from 'redux';
+import { apiMiddleware } from 'redux-api-middleware';
 import ReduxThunk from 'redux-thunk';
 
-import reducers from './reducers';
+import logger from 'redux-logger'
+import reducer from './reducers/CombinedReducer';
 
-const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
+const createStoreWithMiddleware = applyMiddleware(ReduxThunk, logger, apiMiddleware)(createStore);
 
-export default store;
+export default function configureStore(initialState) {
+  return createStoreWithMiddleware(reducer, initialState);
+}
