@@ -26,6 +26,22 @@ export default styles = StyleSheet.create({
 
     cardText: {
         marginLeft: 20,
+        color: 'white', 
+        fontSize: 22, 
+        fontWeight: 'bold', 
+        marginTop: 20 
+    },
+    cardText2: {
+        marginLeft: 20,
+        color: '#adadad', 
+        fontSize: 18, 
+        marginTop: 10 
+    },
+    cardText3: {
+        marginLeft: 20,
+        color: '#adadad', 
+        fontSize: 15, 
+        marginTop: 10
     },
 
     placeholderCard: {
@@ -54,5 +70,23 @@ export default styles = StyleSheet.create({
     placeholderText: {
         backgroundColor: '#787878',
         marginLeft: 20,
-    }
+        width: '40%',
+        height: 30,
+        marginTop: 20
+    },
+    placeholderText2: {
+        backgroundColor: '#787878',
+        marginLeft: 20,
+        width: '70%', 
+        height: 20, 
+        marginTop: 15
+    },
+    placeholderText3: {
+        backgroundColor: '#787878',
+        marginLeft: 20,
+        width: '50%',
+        height: 18,
+        marginTop: 15
+    },
+
 });

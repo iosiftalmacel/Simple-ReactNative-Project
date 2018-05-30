@@ -13,6 +13,12 @@ const Images = {
 
     like_empty: require('../assets/like_empty.png'),
     like_filled: require('../assets/like_filled.png'),
+
+    call_icon: require('../assets/call_icon.png'),
+    location_icon: require('../assets/location_icon.png'),
+    website_icon: require('../assets/website_icon.png'),
+
+    gradient_tab: require('../assets/gradient_tab.png'),
 }
 
 export default Images;

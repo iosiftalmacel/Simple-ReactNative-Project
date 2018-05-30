@@ -1,5 +1,14 @@
 {
   "expo": {
-    "sdkVersion": "27.0.0"
+    "sdkVersion": "27.0.0",
+    "name": "TestReactNative",
+    "version": "1.0.0",
+    "slug": "your-app-slug",
+    "ios": {
+      "bundleIdentifier": "com.iosiftalmacel.testreactnative"
+    },
+    "android": {
+      "package": "com.iosiftalmacel.testreactnative"
+    }
   }
 }

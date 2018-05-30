@@ -9,7 +9,15 @@ let Strings = new  LocalizedStrings({
     bottom_nav_profile:"PROFILE",
 
     home_title:"HOME",
-    detail_title:"DETAIL"
+    detail_title:"DETAIL",
+
+    info_action_website:"Visit the website",
+    info_action_location:"Get Directions",
+    info_action_call:"Call the venue",
+
+    opening_times:"OPENING TIMES",
+    perks_details:"PERKS DETAILS",
+
   },
 });
 

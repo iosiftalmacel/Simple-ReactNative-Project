@@ -10,17 +10,15 @@ import * as BrowseActions from '../../actions/BrowseActions';
 class BrowsePanel extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { items: [] };
   }
+
   componentDidMount() {
-    console.log(Object.keys(this.props.navigation))
-    // this.props.navigation.navigate("DetailScreen")
     this.props.loadBrowseList();
   }
 
   render() {
     const placeholder = 0;
-    var { items } = this.props;
+    var { items, navigation } = this.props;
     if (items.length <= 0) items = [placeholder, placeholder, placeholder];
 
     return (
@@ -33,7 +31,7 @@ class BrowsePanel extends React.Component {
             if (item == placeholder)
               return <CardPlaceholder/>
             else
-              return <Card itemData = {item} />
+              return <Card itemData = {item} navigation = {navigation} />
           }}
         />
       </View>

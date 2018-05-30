@@ -33,9 +33,9 @@ export default class CardPlaceholder extends React.Component {
                         <View style={styles.placeholderHeart} />
                     </View>
 
-                    <View style={[styles.placeholderText, { width: '40%', height: 30, marginTop: 20 }]} />
-                    <View style={[styles.placeholderText, { width: '70%', height: 20, marginTop: 15 }]} />
-                    <View style={[styles.placeholderText, { width: '50%', height: 18, marginTop: 15 }]} />
+                    <View style={styles.placeholderText} />
+                    <View style={styles.placeholderText2} />
+                    <View style={styles.placeholderText3} />
                 </View>
             </Animated.View>
         );
