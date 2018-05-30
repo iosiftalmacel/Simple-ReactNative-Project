@@ -11,7 +11,7 @@ export function loadDetailsData() {
         setTimeout(()=>{
             var data = require('../assets/details_response.json');
             dispatch({ type: DETAILS_SUCCESS, payload: data.data });
-        }, 2000);
+        }, 2500);
            
     };
 };

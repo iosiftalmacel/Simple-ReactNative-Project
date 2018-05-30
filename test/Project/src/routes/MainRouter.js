@@ -25,7 +25,7 @@ const MainNavigation = createTabNavigator(
         title: Strings.bottom_nav_posts,
         tabBarIcon: ({ focused, tintColor }) => {
           var icon = focused ? Images.posts_filled : Images.posts_empty;
-          return <Image source={icon} style={{ width: 24, flex: 1, resizeMode: 'contain', bottom: 1 }} />;
+          return <Image fadeDuration={0} source={icon} style={{ width: 24, flex: 1, resizeMode: 'contain', bottom: 1 }} />;
         },
       }),
     },
@@ -35,7 +35,7 @@ const MainNavigation = createTabNavigator(
         title: Strings.bottom_nav_favourites,
         tabBarIcon: ({ focused, tintColor }) => {
           var icon = focused ? Images.favourites_filled : Images.favourites_empty;
-          return <Image source={icon} style={{ width: 22, flex: 1, resizeMode: 'contain', bottom: 1 }} />;
+          return <Image fadeDuration={0} source={icon} style={{ width: 22, flex: 1, resizeMode: 'contain', bottom: 1 }} />;
         },
       }),
     },
@@ -45,7 +45,7 @@ const MainNavigation = createTabNavigator(
         title: Strings.bottom_nav_redeemed,
         tabBarIcon: ({ focused, tintColor }) => {
           var icon = focused ? Images.redeemed_filled : Images.redeemed_empty;
-          return <Image source={icon} style={{ width: 21, flex: 1, resizeMode: 'contain', bottom: 2 }} />;
+          return <Image fadeDuration={0} source={icon} style={{ width: 21, flex: 1, resizeMode: 'contain', bottom: 2 }} />;
         },
       }),
     },
@@ -55,7 +55,7 @@ const MainNavigation = createTabNavigator(
         title: Strings.bottom_nav_profile,
         tabBarIcon: ({ focused, tintColor }) => {
           var icon = focused ? Images.profile_filled : Images.profile_empty;
-          return <Image source={icon} style={{ width: 23, flex: 1, resizeMode: 'contain' }} />;
+          return <Image fadeDuration={0} source={icon} style={{ width: 23, flex: 1, resizeMode: 'contain' }} />;
         },
       }),
     },

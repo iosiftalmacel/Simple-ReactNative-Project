@@ -47,7 +47,7 @@ class DetailScreen extends React.Component {
                 <Text style={[styles.cardText2, { fontSize: 18, marginTop: 4 }]}> {data.title}  </Text>
                 <Text style={[styles.cardText2, { fontSize: 13, marginTop: 9 }]}> {data.location_title}  </Text>
 
-                <InfoBar style={{ marginTop: 35 }} />
+                <InfoBar website={data.website} phone={data.phone} latitude={data.latitude} longitude={data.longitude} style={{ marginTop: 35 }} />
 
                 <Text style={[styles.cardText1, { fontSize: 20, marginTop: 20, marginBottom: 20, fontWeight: 'bold' }]}> {Strings.opening_times} </Text>
 
@@ -55,17 +55,17 @@ class DetailScreen extends React.Component {
 
                 <Text style={[styles.cardText1, { fontSize: 20, marginTop: 25, marginBottom: 10, fontWeight: 'bold' }]}> {Strings.perks_details} </Text>
                 <Text style={[styles.cardText2, { fontSize: 18, marginTop: 4 }]}>
-                   {data.description}
+                    {data.description}
                 </Text>
             </ScrollView>
         )
-        :
-        (
-            <View style={styles.content}>
-                <Animated.View style={[styles.fakeImage, {opacity: fadeAnim}]} />
-                <View style={styles.triangle} />
-            </View>
-        )
+            :
+            (
+                <View style={styles.content}>
+                    <Animated.View style={[styles.fakeImage, { opacity: fadeAnim }]} />
+                    <View style={styles.triangle} />
+                </View>
+            )
         return view;
     }
 }
